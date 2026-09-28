@@ -4,7 +4,7 @@
  * Usage: pickLocation().then(({ lat, lng }) => console.log(lat, lng));
  */
 function pickLocation(options = {}) {
-  const { center = [25.2048, 55.2708], zoom = 5 } = options;
+  const { center = [25.2048, 55.2708], zoom = 15 } = options;
 
   return new Promise((resolve, reject) => {
     loadLeaflet().then(() => {
